@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42dcf76b80.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Developer</p>
+                <h1>Hi im <span>Alfredo Canto</span> <br> from argentina</h1>
+            </div>
+        </div>
+     </div>
+     
+     <!-- ---------------- About ---------------- -->
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis sapien felis.
+                        Aliquam convallis tortor metus, nec bibendum odio dapibus in. Donec id orci sed urna
+                        finibus molestie. Quisque rhoncus et ipsum quis viverra. Nulla tempor id magna rutrum
+                        consectetur. Integer mattis, elit id sagittis porttitor, nisi purus tempus ligula,
+                        sit amet varius lectus odio eu enim. Nam egestas velit ac blandit eleifend. Sed porta
+                        non risus eget blandit. Nam vulputate rhoncus tellus, vel placerat nisi scelerisque
+                        sed. Ut vehicula in dolor eu imperdiet. Morbi lectus ipsum, molestie ut arcu a, semper
+                        sollicitudin leo. Nunc mattis diam sit amet quam finibus, non tristique arcu commodo.
+                        Ut vitae augue et odio vehicula tristique quis eget libero. Phasellus vehicula imperdiet
+                        est, sed egestas lorem sodales a.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Phasellus vehicula imperdiet</li>
+                            <li><span>Web Development</span><br>Phasellus vehicula imperdiet</li>
+                            <li><span>App Development</span><br>Morbi lectus ipsum, molestie</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Lorem ipsumn nsdsdsd</li>
+                            <li><span>2019 - 2021</span><br>TLorem ipsum dolor sit amet</li>
+                            <li><span>2016 - 2017</span><br>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>vel placerat nisi scelerisque</li>
+                            <li><span>2016</span><br>non tristique arcu commodo</li>
+                            <li><span>2014</span><br>vehicula tristique quis eget</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ---------------- Services ---------------- -->
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Designer</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi venenatis sapien felis. Aliquam convallis tortor
+                        metus.
+                    </p> 
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi venenatis sapien felis. Aliquam convallis tortor
+                        metus.
+                    </p> 
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Morbi venenatis sapien felis. Aliquam convallis tortor
+                        metus.
+                    </p> 
+                    <a href="#">Learn more</a>
+                </div>
+
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ---------------- Portfolio ---------------- -->
+
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus sit amet lacus bibendum, at convallis diam auctor. Ut quam mi, accumsan vitae dolor tristique, elementum eleifend libero.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus sit amet lacus bibendum, at convallis diam auctor. Ut quam mi, accumsan vitae dolor tristique, elementum eleifend libero.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam porttitor tellus sit amet lacus bibendum, at convallis diam auctor. Ut quam mi, accumsan vitae dolor tristique, elementum eleifend libero.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>               
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+
+     <!-- ------------ Contact ----------- -->
+     <div id="contact">
+        <div class="contain">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> alfrecanto11@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 3364496756</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Alfredo Canto. </p>
+        </div>
+     </div>
+
+
+     
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            } 
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            } 
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+     </script>
+
+     <script>
+        var interaction = document.getElementById("sidemenu");
+        function openmenu(){
+            interaction.style.right = "0";
+        }
+        function closemenu(){
+            interaction.style.right = "-200px";
+        }
+     </script>
+
+     <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyc2ePfknMCvZG0bw8HTsWHwuWwrcvxXFmSaATHNNGOEIMjxfanafj7a0xo6cLvhBV79w/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>

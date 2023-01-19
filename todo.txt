@@ -1,0 +1,7 @@
+cambiar{
+    colores
+    fotos
+    fuentes
+    armar cv para poder descargar
+    linkear redes sociales
+}
